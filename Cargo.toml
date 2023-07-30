@@ -1,0 +1,17 @@
+[package]
+name = "web-template-react-rust"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "4.3.1"
+serde = { version = "1.0.178", features = ["derive"] }
+serde_json = "1.0.104"
+tokio = { version = "1.29.1", features = ["full"] }
+
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
